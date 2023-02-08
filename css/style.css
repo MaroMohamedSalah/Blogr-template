@@ -1,0 +1,94 @@
+:root {
+	--CTA_text: hsl(356, 100%, 66%);
+	--CTA_hover_background: hsl(355, 100%, 74%);
+	--headings: hsl(208, 49%, 24%);
+
+	--bg-veryDarkGrayBlue: hsl(237, 17%, 21%);
+	--bg-veryDarkDesaturtedBlue: hsl(237, 23%, 32%);
+
+	--main-transition: 0.2s;
+}
+body {
+	font-family: "Overpass", sans-serif;
+}
+/* intro style  */
+nav {
+	font-family: "Ubuntu", sans-serif;
+}
+.intro {
+	height: 35vh;
+	background: var(--CTA_hover_background);
+	background-image: url("../images/bg-pattern-intro-desktop.svg");
+	background-image: url("../images/bg-pattern-intro-desktop.svg"),
+		linear-gradient(
+			155deg,
+			var(--CTA_hover_background) 27%,
+			var(--CTA_text) 70%
+		);
+	background-size: 125%;
+	background-position: center;
+	border-bottom-left-radius: 3em;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+.dropdown-toggle {
+	font-size: 0.75em;
+}
+.dropdown .arrow {
+	color: white;
+	font-size: 0.6em;
+	top: 40%;
+	right: -5px;
+	transition: all var(--main-transition) ease-in-out;
+}
+.dropdown-item {
+	transition: all var(--main-transition) ease-in-out;
+}
+.dropdown-toggle:hover {
+	color: white !important;
+}
+.dropdown-item:hover {
+	font-weight: 500;
+}
+.intro .btn,
+.intro .btn a {
+	font-family: "Ubuntu", sans-serif;
+	transition: all var(--main-transition) ease-in-out;
+}
+.intro .introText .learn:hover a {
+	color: var(--CTA_hover_background) !important;
+}
+@media only screen and (max-width: 600px) {
+	.intro {
+		height: 75vh;
+		background-size: 400%;
+	}
+	.intro .introText {
+		height: calc(75vh - 56px);
+		justify-content: center;
+	}
+}
+/* nav style  */
+.signup {
+	border: none;
+}
+.signup a {
+	color: var(--CTA_text);
+}
+.signup:hover {
+	background-color: var(--CTA_hover_background) !important;
+}
+.signup:hover a {
+	color: white;
+}
+
+/* section 2 style  */
+section:nth-of-type(2) {
+	height: 65vh;
+}
+section:nth-of-type(2) .container .title {
+	margin-top: 2.5em;
+	font-size: 1.75em;
+	color: var(--bg-veryDarkDesaturtedBlue);
+}
