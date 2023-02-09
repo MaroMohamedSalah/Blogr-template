@@ -19,3 +19,15 @@ dropdownToggles.forEach((dropdown) => {
 		}
 	}, 100);
 });
+
+// sw installing
+if (navigator.serviceWorker) {
+	navigator.serviceWorker
+		.register("../sw.js")
+		.then((reg) => {
+			console.log("register", reg);
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+}
