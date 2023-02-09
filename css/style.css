@@ -10,13 +10,14 @@
 }
 body {
 	font-family: "Overpass", sans-serif;
+	overflow-x: hidden;
 }
 /* intro style  */
 nav {
 	font-family: "Ubuntu", sans-serif;
 }
 .intro {
-	height: 35vh;
+	min-height: 35vh;
 	background: var(--CTA_hover_background);
 	background-image: url("../images/bg-pattern-intro-desktop.svg");
 	background-image: url("../images/bg-pattern-intro-desktop.svg"),
@@ -84,11 +85,90 @@ nav {
 }
 
 /* section 2 style  */
-section:nth-of-type(2) {
-	height: 65vh;
+section .container {
+	height: inherit;
 }
 section:nth-of-type(2) .container .title {
 	margin-top: 2.5em;
 	font-size: 1.75em;
 	color: var(--bg-veryDarkDesaturtedBlue);
+}
+section:nth-of-type(2) .container .laptop-img {
+	top: 50%;
+	transform: translateY(-50%);
+}
+section:nth-of-type(2) .container .row h1 {
+	color: var(--bg-veryDarkDesaturtedBlue);
+}
+@media screen and (min-width: 768px) {
+	/* For Laptops */
+	section:nth-of-type(2) .container img {
+		width: 100%;
+	}
+	section:nth-of-type(2) {
+		height: 100vh;
+	}
+	section:nth-of-type(2) .container .row {
+		height: 75%;
+	}
+}
+@media screen and (min-width: 1900px) {
+	/* For Big TV's (HD Screens)  */
+	section:nth-of-type(2) .container img {
+		width: 117%;
+	}
+	section:nth-of-type(2) .container .row {
+		height: 75%;
+	}
+}
+
+/* Section 3 style  */
+section:nth-of-type(3) {
+	background: var(--bg-veryDarkGrayBlue);
+	background-image: url("../images/bg-pattern-circles.svg");
+	background-image: url("../images/bg-pattern-circles.svg"),
+		linear-gradient(
+			155deg,
+			var(--bg-veryDarkGrayBlue) 27%,
+			var(--bg-veryDarkDesaturtedBlue) 70%
+		);
+	background-position: start;
+	background-repeat: no-repeat;
+	background-position-y: 80%;
+	border-bottom-left-radius: 3em;
+	border-top-right-radius: 3em;
+	height: 70vh;
+}
+section:nth-of-type(3) img {
+	top: -25%;
+	left: 0;
+}
+@media only screen and (max-width: 600px) {
+	/* For Mobile */
+	section:nth-of-type(3) {
+		margin-top: 20em;
+		background-position: bottom;
+		background-size: cover;
+	}
+	section:nth-of-type(3) img {
+		margin-top: -10em;
+	}
+}
+@media screen and (min-width: 768px) {
+	/* For Laptops */
+	section:nth-of-type(3) {
+		height: 70vh;
+	}
+	section:nth-of-type(3) .image {
+		position: relative;
+	}
+	section:nth-of-type(3) .image img {
+		position: absolute;
+	}
+}
+@media screen and (min-width: 1200px) {
+	/* For Big TV's (HD Screens)  */
+	section:nth-of-type(3) {
+		height: 40vh;
+	}
 }
