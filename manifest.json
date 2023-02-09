@@ -5,8 +5,8 @@
 	"background_color": "#3f4164",
 	"display": "standalone",
 	"orientation": "portrait",
-	"scope": "/",
-	"start_url": "/index.html",
+	"scope": "/https://maromohamedsalah.github.io/Blogr-template/",
+	"start_url": "/https://maromohamedsalah.github.io/Blogr-template/",
 	"id": "/",
 	"icons": [
 		{
