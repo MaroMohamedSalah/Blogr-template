@@ -5,8 +5,8 @@
 	"background_color": "#3f4164",
 	"display": "standalone",
 	"orientation": "portrait",
-	"scope": "/",
-	"start_url": "/",
+	"scope": "../Blogr-template/index.html",
+	"start_url": "../Blogr-template/index.html",
 	"id": "/",
 	"icons": [
 		{
