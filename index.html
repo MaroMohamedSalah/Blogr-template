@@ -40,53 +40,53 @@
       <!-- Start Nav  -->
       <nav class="bg-transparent navbar navbar-expand-lg">
         <a class="navbar-brand text-light fw-bold me-5 fs-3" href="#">Blogr</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        <button class="menu-btn btn" type="button" id="menuBtn" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <img src="./images/icon-hamburger.svg" alt="">
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown me-4">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex juscfay-content-center align-items-center p-0 w-100">
+            <li class="nav-item dropdown me-4 w-sm-100">
               <a class="nav-link dropdown-toggle text-white-50 fw-semibold position-relative" href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Product
+                <i class="fa-solid fa-angle-down position-absolute arrow"></i>
               </a>
-              <i class="fa-solid fa-angle-down position-absolute arrow"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu w-sm-100">
                 <li><a class="dropdown-item" href="#">Pricing</a></li>
                 <li><a class="dropdown-item" href="#">Marketplace</a></li>
                 <li><a class="dropdown-item" href="#">Features</a></li>
                 <li><a class="dropdown-item" href="#">Integrations</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle text-white-50 fw-semibold" href="#" role="button"
+            <li class="nav-item dropdown me-4 ">
+              <a class="nav-link dropdown-toggle text-white-50 fw-semibold position-relative " href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Company
+                <i class="fa-solid fa-angle-down position-absolute arrow"></i>
               </a>
-              <i class="fa-solid fa-angle-down position-absolute arrow"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu ">
                 <li><a class="dropdown-item" href="#">About</a></li>
                 <li><a class="dropdown-item" href="#">Team</a></li>
                 <li><a class="dropdown-item" href="#">Blog</a></li>
                 <li><a class="dropdown-item" href="#">Careers</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown me-4">
-              <a class="nav-link dropdown-toggle text-white-50 fw-semibold" href="#" role="button"
+            <li class="nav-item dropdown me-4 ">
+              <a class="nav-link dropdown-toggle text-white-50 fw-semibold position-relative " href="#" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Connect
+                <i class="fa-solid fa-angle-down position-absolute arrow"></i>
               </a>
-              <i class="fa-solid fa-angle-down position-absolute arrow"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu ">
                 <li><a class="dropdown-item" href="#">Contact</a></li>
                 <li><a class="dropdown-item" href="#">Newsletter</a></li>
                 <li><a class="dropdown-item" href="#">LinkedIn</a></li>
               </ul>
             </li>
           </ul>
-          <button class="badge rounded-pill p-3 pt-2 pb-2 btn ">
+          <button class="badge rounded-pill p-3 pt-2 pb-2 btn login">
             <a class="text-decoration-none text-white-50" href="#">Login</a>
           </button>
           <button class="badge rounded-pill p-4 pt-2 pb-2 signup text-bg-light btn">
@@ -109,6 +109,11 @@
         </div>
       </div>
       <!-- End intro text  -->
+      <!-- Start mobile menu  -->
+      <!-- <div class="menu">
+
+      </div> -->
+      <!-- End mobile menu  -->
     </div>
   </section>
   <!-- End intro  -->
@@ -159,7 +164,7 @@
         </div>
         <div class="text col-md-6 col-12 d-flex justify-content-center flex-column">
 
-          <h1 class="title text-light mb-3">State of the Art Infrastructure</h1>
+          <h1 class="title text-light mb-3 text-center">State of the Art Infrastructure</h1>
           <p class="fs-5 text-white-50 text-center text-md-start text-lg-start"> With reliability and speed in
             mind,
             worldwide data centers provide the backbone
@@ -175,48 +180,88 @@
     </div>
   </section>
   <!-- End Section 3 -->
+  <!-- Start Section 4 -->
+  <section>
+    <div class="container d-flex justify-content-center align-items-center ">
+      <div class="row d-flex justify-content-center align-items-center flex-md-row">
+        <div class=" col-md-6 col-12 h-md-100 pe-md-5 position-relative">
 
-  <!-- Product -->
+          <img class="img position-absolute w-md-100 laptop-img d-md-block d-lg-block d-none"
+            src="./images/illustration-laptop-desktop.svg" alt="">
 
+          <img class="img-fluid d-sm-block d-lg-none d-md-none my-5" src="./images/illustration-laptop-mobile.svg"
+            alt="">
+        </div>
+        <div class="col-md-6 col-12 text-center text-lg-start text-md-start">
+          <div>
+            <h1 class="mb-3 fs-2 fw-normal">Free, open, simple</h1>
+            <p class="fs-5 text-black-50"> Blogr is a free and open source application backed by a large community of
+              helpful developers. It supports
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+              tools,
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          </div>
+          <div>
+            <h1 class="mb-3 fs-2 mt-5 fw-normal">Powerful tooling</h1>
+            <p class="fs-5 text-black-50">Batteries included. We built a simple and straightforward CLI tool that makes
+              customization and deployment a breeze,
+              but
+              capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section 4 -->
+  <!-- Start footer  -->
+  <footer class="py-5 text-center text-md-start mt-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+        <div class="col mb-md-3 mb-lg-3 mb-5">
+          <a class="navbar-brand text-light fw-bold me-md-5 me-lg-5 fs-3" href="#">Blogr</a>
+          <p class="mt-3 d-none d-md-block d-lg-block">© 2023 by Marwan</p>
+        </div>
+        <div class="col mb-3">
+          <!-- space  -->
+        </div>
+        <div class="col mb-3">
+          <h5 class="mb-4">Product</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Overview</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Marketplace</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Integrations</a></li>
+          </ul>
+        </div>
 
-  <!--
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
-  but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn -->
-
-  <div class="attribution">
+        <div class="col mb-3">
+          <h5 class="mb-4">Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Team</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Blog</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5 class="mb-4">Connect</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Contact</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">Newsletter</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white-50">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer  -->
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Marwan Mohamed</a>.
-  </div>
+  </div> -->
   <!-- add script  -->
-  <script src="./js/script.js"></script>
+  <script src="./script.js"></script>
   <!-- add bootstrap js  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">

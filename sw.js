@@ -1,5 +1,5 @@
 // add cache
-const cacheName = "test";
+const cacheName = "blogr-v1";
 const assets = [
 	"/",
 	"/index.html",
@@ -27,11 +27,15 @@ self.addEventListener("install", (installEvent) => {
 });
 
 // detect activate
-self.addEventListener("activate", (activateEvent) => {
-	activateEvent.waitUntil(
-		caches.keys().then((keys) => {
+self.addEventListener("activate", function (event) {
+	event.waitUntil(
+		caches.keys().then((cacheNames) => {
 			return Promise.all(
-				keys.filter((key) => key != cacheName).map((key) => caches.delete(key))
+				cacheNames.map((cache) => {
+					if (cacheName !== cache && cache.startsWith("blogr")) {
+						return caches.delete(cache);
+					}
+				})
 			);
 		})
 	);
