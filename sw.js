@@ -1,5 +1,5 @@
 // add cache
-const cacheName = "blogr-v1";
+const cacheName = "blogr-v2";
 const assets = [
 	"/",
 	"/index.html",
